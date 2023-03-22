@@ -1,0 +1,72 @@
+.addProduct-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    color: #37b0c8a7;
+  }
+
+  .form {
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .addProduct-label {
+      margin: 10px;
+      font-size: 1.3rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 0.4rem;
+      color: #ffffffa7;
+    }
+
+    .addProduct-input {
+      margin: 10px;
+      width: 300px;
+      height: 20px;
+      border: 1px solid #ccc;
+      padding: 5px;
+      background-color: rgba(255, 255, 255, 0.831);
+      border-radius: 22px;
+      padding: 15px 18px;
+      font-size: 16px;
+      outline: none;
+      transition: all 0.3s ease-in-out;
+
+      &:focus {
+        background-color: rgb(255, 255, 255);
+      }
+    }
+
+    .submit-btn {
+      margin-top: 80px;
+      width: 200px;
+      height: 40px;
+      border: 1px solid rgb(56, 155, 61);
+      border-radius: 16px;
+      background-color: rgb(49, 139, 54);
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .submit-btn:hover {
+      background-color: rgb(42, 127, 47);
+      border: 1px solid rgb(42, 127, 47);
+    }
+  }
+  @media only screen and (min-width: 425px) {
+    .form {
+      width: 600px;
+    }
+  }
+}

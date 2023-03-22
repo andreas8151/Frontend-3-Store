@@ -1,0 +1,142 @@
+.allProducts {
+  text-align: center;
+
+  .head {
+    background-image: url("./pods.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+
+    .head-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 90%;
+      color: white;
+      font-family: "Roboto", sans-serif;
+
+      h1 {
+        font-size: 4rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.4rem;
+        margin: 8px;
+        color: #37b0c8a7;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 0.4rem;
+        margin: 8px;
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  .search {
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.713);
+    border-radius: 22px;
+    width: 600px;
+    padding: 15px 18px;
+    margin: 50px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      background-color: rgb(255, 255, 255);
+    }
+  }
+
+  label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    .price {
+      margin-bottom: 10px;
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: rgb(57, 189, 112);
+    }
+
+    input {
+      margin-bottom: 10px;
+    }
+  }
+
+  .product-container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    .product {
+      width: 300px;
+      height: 350px;
+      text-align: center;
+      border: 1px solid #00000067;
+      border-radius: 5%;
+      margin: 20px;
+      padding: 20px;
+      background-color: #37b0c818;
+      color: white;
+      transition: background-color 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.2rem;
+
+      &:hover {
+        background-color: #12436092;
+      }
+
+      img {
+        width: 220px;
+        border-radius: 5%;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .price {
+        font-size: 1.5rem;
+        color: rgb(57, 189, 112);
+        margin-top: 50px;
+      }
+    }
+  }
+  @media screen and (max-width: 425px) {
+    label {
+      display: none;
+    }
+    .search {
+      width: 250px;
+    }
+
+    h1 {
+      display: none;
+    }
+
+    p {
+      display: none;
+    }
+
+    .head {
+      height: 50vh;
+    }
+
+    .price {
+      display: block;
+    }
+  }
+}

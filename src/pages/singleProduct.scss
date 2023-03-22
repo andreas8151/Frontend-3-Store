@@ -1,0 +1,208 @@
+.single-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  .product-container {
+    margin: 20px;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.049) 80%,
+      rgba(60, 100, 136, 0.354) 30%
+    );
+    margin-top: 90px;
+    border-radius: 15px;
+    width: 600px;
+    height: 100%;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .formAdd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 18px;
+    background: rgba(255, 255, 255, 0.078);
+    padding: 30px;
+    border-radius: 10px;
+
+    label {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+      margin-right: 25px;
+      color: #e1ae49e1;
+    }
+
+    .price-label {
+      color: rgb(56, 155, 61);
+    }
+
+    .text-label {
+      float: left;
+      margin-right: 30px;
+      margin-top: 25px;
+      margin-left: 10px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+      color: #ed8989e1;
+    }
+
+    .input {
+      margin: 10px;
+      width: 300px;
+      height: 20px;
+      border: 1px solid #ccc;
+      padding: 5px;
+      background-color: #e5e5e5;
+      border-radius: 22px;
+      padding: 15px 18px;
+      font-size: 16px;
+      outline: none;
+      transition: all 0.3s ease-in-out;
+
+      &:focus {
+        background-color: rgb(255, 255, 255);
+      }
+    }
+
+    .btn-container {
+      margin-left: 60px;
+
+      & button {
+        margin: 10px;
+        width: 120px;
+        height: 35px;
+        border: 1px solid rgb(56, 155, 61);
+        border-radius: 18px;
+        background-color: rgb(49, 136, 53);
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+          background-color: rgb(42, 127, 47);
+          border: 1px solid rgb(42, 127, 47);
+        }
+      }
+      .deleteBtn {
+        border: 1px solid rgb(202, 81, 56);
+        background-color: rgb(218, 89, 63);
+
+        &:hover {
+          background-color: rgb(180, 72, 51);
+          border: 1px solid rgb(172, 67, 45);
+        }
+      }
+    }
+
+    @media screen and (max-width: 425px) {
+      .formAdd {
+        width: 300px;
+        height: 100%;
+      }
+
+      .input {
+        width: 200px;
+      }
+
+      .btn-container {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  .update-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 425px) {
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .product {
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: 0.2rem;
+      color: #ffffffe0;
+      border-radius: 15px;
+      padding: 10px;
+      padding-top: 30px;
+    }
+
+    img {
+      border-radius: 5%;
+      width: 400px;
+      box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.179);
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .dollar {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: rgb(57, 189, 112);
+    }
+
+    .description {
+      margin-top: 40px;
+      font-size: 1rem;
+      width: 400px;
+      font-weight: 500;
+      letter-spacing: 0.2rem;
+      color: #ffffffe0;
+    }
+
+    @media screen and (max-width: 425px) {
+      img {
+        width: 300px;
+      }
+
+      .description {
+        width: 300px;
+        font-size: small;
+      }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .single-container {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+
+    .product-container {
+      width: 400px;
+      height: 100%;
+    }
+  }
+}
