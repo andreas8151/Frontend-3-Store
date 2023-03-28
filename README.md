@@ -14,6 +14,7 @@ To run this application on your local machine, follow these steps:
 * Start the application: npm start
 
 Features
+  
 This application has the following features:
 
 * Add new products: Users can add new products to the store by filling out a form with the product's details.
